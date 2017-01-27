@@ -7,4 +7,4 @@ function playAudio(){
 	document.getElementById('sound').play();
 }
 
-setTimeout("playAudio()", 50000);
+setTimeout("playAudio()", 54280);
