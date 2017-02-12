@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Registration | REAP</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="main.png">
+	<link rel="apple-touch-icon" href="main.png">
+	<link rel="icon" sizes="192x192" href="main.png">
+</head>
+
+<body class="formbg">
+	<div class="object output">
+		<form name="signupForm" action="./Submitted.html" onsubmit="return validateForm(this);">
+			<fieldset class="Info">
+				<legend class="formGlow">Information about You</legend>
+				<label for="nameinput" class="formGlow">
+					Name
+					<input type="text" name="name" id="nameinput">
+				</label>
+				<fieldset class="Species">
+					<legend class="formGlow">Your Species</legend>
+					<label class="formGlow" for="human">
+						<input type="radio" id="Human" value="Human" name="species">Human
+					</label>
+					<label class="formGlow" for="Lehvta">
+						<input type="radio" id="lehvta" value="Lehvta" name="species">Lehvta
+					</label>
+					<label class="formGlow" for="Telezkar">
+						<input type="radio" id="telezkar" value="Telezkar" name="species">Telezkar
+					</label>
+					<label class="formGlow" for="Nektar">
+						<input type="radio" id="nektar" value="Nektar" name="species">Nektar
+					</label>
+					<label class="formGlow" for="Zyeruja">
+						<input type="radio" id="zyeruja" value="Zyeruja" name="species">Zyeruja
+					</label>
+				</fieldset>
+				<fieldset class="Gender">
+					<legend class="formGlow">Your Gender</legend>
+					<label class="formGlow" for="maleGender">
+						<input type="radio" id="male" value="Male" name="gender">Male
+					</label>
+					<label class="formGlow" for="femaleGender">
+						<input type="radio" id="female" value="Female" name="gender">Female
+					</label>
+				</fieldset>
+				<label class="formGlow" for="emailinput">Email
+					<input type="text" name="email" id="emailInput">
+				</label>
+				<fieldset class="reason">
+					<legend class="formGlow">Why do you wish to join REAP?</legend>
+					<label for="answer">
+						<textarea name="answer" id="answer" rows="6" cols="60"></textarea>
+					</label>
+				</fieldset>
+				<input type="submit" id="submit" value="Submit">
+		</form>
+	</div>
+	<div class="object scanlines"></div>
+	<div class="object"></div>
+	<script src="FormValidation.js"></script>
+</body>
+
+</html>

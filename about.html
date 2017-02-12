@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About | REAP</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="main.png">
+	<link rel="apple-touch-icon" href="main.png">
+	<link rel="icon" sizes="192x192" href="main.png">
+</head>
+
+<body id="particles-js">
+	<a class="nav-main" href="./Main.html">
+		<img src="main.png" alt="Main" class="mainLogo"></a>
+	<nav class="Navmenu">
+		<ul>
+			<li>
+				<div class="underline nav-quotes">Quotes<span></span></div>
+
+			</li>
+			<li>
+				<div class="underline nav-world">World<span></span></div>
+
+			</li>
+			<li>
+				<div class="underline nav-classes"> Classes <span></span></div>
+
+			</li>
+			<li>
+				<div class="underline nav-story">Story<span></span></div>
+
+			</li>
+			<li>
+				<div class="underline nav-weapons ">Weapons<span></span></div>
+			</li>
+			<li>
+				<div class="underline nav-gallery">Gallery<span></span></div>
+			</li>
+			<li>
+				<div class="underline nav-about nav-selected">About<span></span></div>
+			</li>
+		</ul>
+	</nav>
+	<button id="REAPbtn" class="aboutBtn"> What is REAP?</button>
+
+	<div id="REAPmodal" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+			<h1 class="abouth1">About REAP</h1>
+			<a href="https://twitter.com/ReaperIke" target="_blank">
+				<img src="Twitter-icon.png" id="twitter" alt="Twitter" />
+			</a>
+			<p id="reap">REAP stands for the <strong>R</strong>ecovery of <strong>E</strong>arth
+				<strong>A</strong>fter the
+				<strong>P</strong>illage. REAP is a top secret military organization formed to take Earth back from Yaldabaoth and restore Earth back to its former self. It was formed by the man behind Yaldabaoth. Members of REAP are known as 'Reapers'. To know more about REAP, how bout experiencing it yourself? REAP is always open to those eager to reclaim Earth back.
+				<br>Become a Reaper here: <a id="signup" href="Form.html">I want to join REAP</a>
+			</p>
+		</div>
+	</div>
+
+	<button id="myBtn" class="aboutBtn">Who are you?</button>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">x</span>
+			<h1 class="abouth1">Creator of REAP</h1>
+			<p>
+				&#42;<em>Record scratch</em>&#42;
+				<br> &#42;
+				<em>Freeze frame</em>&#42;
+				<img src="me.png" id="me" />
+				<a href="https://miiverse.nintendo.net/users/GlitchPlays" target="_blank" class="miiverseLink">
+					<img src="miiMobile.png" id="mobileMii" />
+					<img src="miiverse.png" id="miiverse" alt="Miiverse" />
+				</a>
+				<br> Yup, that's me. You&#39;re probably wondering how I ended up in this situation.
+				<br> Allow me to introduce myself.The name given to me is Ike. I am the creator of this site and REAP. Hmm, what to say about myself...My favourite video game of all time is The Legend of Zelda. The music, the theories fans think up of, the lore in Zelda, the characters, the world! Oh I cannot wait for Breath of the Wild! I mean have you seen the trailer? The music, the artstyle, the new things you can do in Zelda! Nintendo better stop delaying! I mean, I heard they delayed it and will not show it at the launch of their new console the Switch! Nintendo what are you thinking?! My favourite youtuber is chuggaaconroy, a Let's Player. He actually is the reason why I became a fan of Nintendo to be honest. If you got the time, why not watch his videos? You'll laugh like a Laughing Reqavet! Dislike? Well the list is longer than Santa Claus' list so I'll give 3. Polo shirts, hot and humid weather and oppression. I aim to be a video game developer some day so when that times...yes I will truly create REAP. Be prepared for that day fellow Reapers...</p><a href="credits.html">Credits</a>
+		</div>
+	</div>
+	<audio src="worldVA.mp3" id="worldVA"></audio>
+	<audio src="storyVA.mp3" id="storyVA"></audio>
+	<audio src="quotes.mp3" id="quotesVA"></audio>
+	<audio src="aboutVA.mp3" id="aboutVA"></audio>
+	<audio src="classesVA.mp3" id="classesVA"></audio>
+	<audio src="weaponVA.mp3" id="weaponVA"></audio>
+	<audio src="galleryVA.mp3" id="galleryVA"></audio>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="particles.min.js"></script>
+	<script src="particlesjs.js"></script>
+	<script src="worldVA.js"></script>
+	<script src="storyVA.js"></script>
+	<script src="quotesVA.js"></script>
+	<script src="aboutVA.js"></script>
+	<script src="classesVA.js"></script>
+	<script src="weaponVA.js"></script>
+	<script src="galleryVA.js"></script>
+	<script>
+		var btn = document.getElementById('REAPbtn');
+		var modal = document.getElementById('REAPmodal');
+		var span = document.getElementsByClassName('close')[0]
+
+
+		btn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		var button = document.getElementById('myBtn');
+		var modal2 = document.getElementById('myModal');
+		var span2 = document.getElementsByClassName('close')[1]
+
+		button.onclick = function () {
+			modal2.style.display = "block";
+		}
+
+		span2.onclick = function () {
+			modal2.style.display = "none";
+		}
+
+		window.onclick = function (event) {
+			if (event.target == modal2) {
+				modal2.style.display = "none";
+			}
+		}
+	</script>
+	<script src="iconhover.js"></script>
+</body>
+
+</html>
